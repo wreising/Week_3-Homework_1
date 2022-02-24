@@ -4,20 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -30,9 +20,31 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row list-group" id="am7">hour7</div>
+      <div class="row list-group" id="am8">hour8</div>
+      <div class="row list-group" id="am9">hour9</div>
+      <div class="row list-group" id="am10">hour</div>
+      <div class="row list-group" id="am11">hour</div>
+      <div class="row list-group" id="pm12">hour</div>
+      <div class="row list-group" id="pm1">hour</div>
+      <div class="row list-group" id="pm2">hour</div>
+      <div class="row list-group" id="pm3">hour</div>
+      <div class="row list-group" id="pm4">hour</div>
+      <div class="row list-group" id="pm5">hour</div>
+      <div class="row list-group" id="pm6">hour</div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      $(function () {
+          $('.container').sortable({
+            placeholder: 'ui-state-highlight',
+          });
+          $('#skills-list').disableSelection();
+        });
+    </script>
   </body>
 </html>
