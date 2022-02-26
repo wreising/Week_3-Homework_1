@@ -1,17 +1,29 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(75, 75, 75);
+  box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  line-height: 1.2;
 }
 
-textarea{
+/* textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-}
+  width: 90%;
+} */
 
 .jumbotron {
   text-align: center;
@@ -19,27 +31,29 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  margin-bottom: 15px;
 }
 
-.description{
+/* .description {
   white-space: pre-wrap;
-}
+} */
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
 
-.row {
+/* .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
-}
+  border-top: 1px solid white;
+  ;
+} */
 
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border: 1px dashed #000000;
 }
 
 .past {
@@ -61,6 +75,8 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-color: #06AED5;
   color: white;
 }
