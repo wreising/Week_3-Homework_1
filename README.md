@@ -25,4 +25,4 @@ https://wreising.github.io/Week_3-Homework_1/
 
 ✅ The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
-https://github.com/wreising/Week_3-Homework_1/tree/main/Develop
+https://github.com/wreising/Week_3-Homework_1/
