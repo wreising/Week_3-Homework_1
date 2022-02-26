@@ -1,34 +1,23 @@
 $(document).ready(function () {
 
-  // const noteForm = document.getElementById("note-form");
-  // const noteInput = document.getElementById("note-input");
-  // const noteSubmit = document.getElementById("note-submit");
+  renderLastEntered()
 
-  // localStorage.setItem("event", "noteInput")
+  function renderLastEntered() {
+    eventPulled9 = localStorage.getItem("event9")
+    text9.setAttribute('value', eventPulled9)
+  }
 
-
-
-  // function handleFormSubmit(event) {
-  //   event.preventDefault();
-
-  // select form element by its `name` attribute and get its value
-  let eventCal = document.querySelector('#text9').value
-  let eventPost = document.querySelector('#eventPost')
-
-  eventPost.addEventListener('click', function (event) {
+  eventPost9.addEventListener('click', function (event) {
     event.preventDefault()
-
-    localStorage.setItem('event', eventCal)
-
-    console.log(eventCal);
+    let eventCal9 = document.querySelector('#text9').value
+    let eventPost9 = document.querySelector('#eventPost')
+    localStorage.setItem('event9', eventCal9)
   })
-  // print to the page
-  // shoppingListEl.append('<li>' + shoppingItem + '</li>');
 
-  // clear the form input element
-  // $('input[name="shopping-input"]').val('');
-  // }
-
+  clear9.addEventListener('click', function (event) {
+    event.preventDefault()
+    text9.setAttribute('value', '')
+  })
 
   // -------
 

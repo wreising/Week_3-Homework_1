@@ -28,9 +28,9 @@ body {
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: rgb(37, 32, 32);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgb(156, 26, 26);
   margin-bottom: 15px;
 }
 
